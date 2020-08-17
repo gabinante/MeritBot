@@ -183,7 +183,7 @@ class Shop(commands.Cog, name=f'{name}'):  # You create a class instance and eve
             return
 
         embed = discord.Embed(title="Your Cart: Is this the item you'd like to buy?",
-                              description="Make sure it's the correct item. Item bought are **NOT** refundable!")
+                              description="Make sure it's the correct item. Items are **NOT** refundable!")
 
         for items in result:
 
@@ -221,7 +221,7 @@ class Shop(commands.Cog, name=f'{name}'):  # You create a class instance and eve
                     if balance < 0:
 
                         await requestEmbedTemplate(ctx,
-                                                   f"❌ Purchase is unsuccessful.\n\nYou do not have sufficient balance to make this purchase.\n\n**Your Balance:** {balance + itemPrice}",
+                                                   f"❌ Purchase unsuccessful.\n\nYou do not have sufficient balance to make this purchase.\n\n**Your Balance:** {balance + itemPrice}",
                                                    ctx.message.author)
 
                     else:
