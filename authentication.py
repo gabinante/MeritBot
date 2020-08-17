@@ -11,5 +11,4 @@ bot_token = os.environ["auth_token"]
 
     To invite your bot to a server, OAuth2 > tick Bot > Select the permissions you want > Then copy the invite link in the middle """
 
-""" You want to put your bot token in another separate file like this and import them over to the main script so you can
-    exclude all sensitive information if you are ever going to upload them on GitHub by adding this script to a .gitignore file. """
+""" This file can either be .gitignored or the token can be exported as an envvar. """
